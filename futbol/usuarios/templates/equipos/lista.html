@@ -1,0 +1,7 @@
+<h2>Lista de Equipos</h2>
+<ul>
+    {% for equipo in equipos %}
+        <li>{{ equipo.nombre }} - {{ equipo.ciudad }} (Fundado en {{ equipo.fundacion }})</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'crear_equipo' %}">Registrar nuevo equipo</a>
